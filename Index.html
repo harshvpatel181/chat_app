@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Chat app</title>
+</head>
+
+<body>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="/Client.js"></script>
+
+    <main>
+        <section>
+            <div class="title">
+                <img src="https://i.pinimg.com/originals/09/e2/cd/09e2cd8d3a83b6e9cd4dc5d0d703a575.png" height="50px" width="70px">
+                <h1> Chat app</h1>
+            </div>
+        </section>
+        <div class="container">
+            <div class="users-window">
+                <div class="users-head">
+                    <h3></h3>
+                    <h4 class="user-counts"></h4>
+                </div>
+                <div class="users-list">
+                    <p></p>
+                </div>
+            </div>
+            <div class="chat-window">
+                <div class="chats">
+                    <!-- <div class="user-join">
+                        <p> <b> </b> </p>
+                    </div> -->
+                    <!-- <div class="incomming message">
+                        <h5>harsh</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum nisi perferendis. Natus tempora voluptatibus perferendis tempore laborum veniam distinctio, vitae repellat minus? Accusantium facilis officia voluptatibus dolore quas doloribus!</p>
+                    </div>
+                    <div class="outgoing message">
+                        <h5>test</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum nisi perferendis. Natus tempora voluptatibus perferendis tempore laborum veniam distinctio, vitae repellat minus? Accusantium facilis officia voluptatibus dolore quas doloribus!</p>
+                    </div> -->
+                </div>
+                <div class="user-input">
+                    <input type="text" placeholder="Enter the message" id="input-text">
+                    <button id="btnsend">SEND</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+        <!-- <div class="message_area">
+                 <div class="incomming message"> -->
+                    <!-- <h4>harsh</h4> -->
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum nisi perferendis. Natus tempora voluptatibus perferendis tempore laborum veniam distinctio, vitae repellat minus? Accusantium facilis officia voluptatibus dolore quas doloribus!</p> -->
+                <!-- </div> -->
+                <!-- <div class="outgoing message"> -->
+                    <!-- <h4>test</h4> -->
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum nisi perferendis. Natus tempora voluptatibus perferendis tempore laborum veniam distinctio, vitae repellat minus? Accusantium facilis officia voluptatibus dolore quas doloribus!</p> -->
+                <!-- </div> -->
+        <!-- </div> -->
+            <!-- <input type="text" placeholder="Type a message"  id="textarea" > -->
+            <!-- <textarea id="textarea" cols="30" rows="1" placeholder="Write a message"></textarea> -->
+            <!-- <input type="submit" value="send" id="button" class="material-icons"> -->
+            <!-- <button style="font-size:24px">Button <i class="material-icons">send</i></button> -->
+</body>
+</html>

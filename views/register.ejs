@@ -1,0 +1,27 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <h1>Register</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+
+            Name:<input type="text" placeholder="Enter name" name="name" id="name" required> <br><br>
+
+            Email:<input type="email" placeholder="Enter email" name="email" id="email" required> <br><br>
+
+            Image:<input type="file" name="image" type="png" required> <br><br>
+
+            Password:<input type="password" placeholder="Password" name="password" id="psw" required> <br><br>
+
+            <button type="submit" value="Register" class="registerbtn">Register</button>
+        </form>
+                
+        <%
+            if(typeof message !== 'undefined'){
+                %>
+                    <p style="color: green;"> <%= message %> </p>
+                <%
+            }
+        %> 
